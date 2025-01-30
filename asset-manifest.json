@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b4a2f4e2.css",
+    "main.js": "/portfolio/static/js/main.e56eab81.js",
+    "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/youngLady.svg": "/portfolio/static/media/youngLady.60d677bf4c1e30199f8c1477370b0141.svg",
+    "static/media/frontend.svg": "/portfolio/static/media/frontend.444a7f35a3a380511c7714b5cc780065.svg",
+    "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/UIUX.svg": "/portfolio/static/media/UIUX.197e9326b38a355cb1bb55ae6aa7f32d.svg",
+    "static/media/cloudinfra.svg": "/portfolio/static/media/cloudinfra.b6c92e30a05790f98cec78db8a4aaefa.svg",
+    "index.html": "/portfolio/index.html",
+    "main.b4a2f4e2.css.map": "/portfolio/static/css/main.b4a2f4e2.css.map",
+    "main.e56eab81.js.map": "/portfolio/static/js/main.e56eab81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4a2f4e2.css",
+    "static/js/main.e56eab81.js"
+  ]
+}
