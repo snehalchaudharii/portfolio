@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="row gy-4 justify-content-center">
           <div className="d-flex justify-content-center mt-4">
             <a
-              href="https://github.com/snehaldeveloper"
+              href="https://github.com/snehalchaudharii"
               className="icon-button"
               target="_blank"
               rel="noopener noreferrer"

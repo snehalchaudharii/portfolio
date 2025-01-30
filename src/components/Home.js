@@ -39,7 +39,7 @@ const Home = () => {
           </p>
           <div className="d-flex justify-content-center justify-content-md-start mt-4">
             <a
-              href="https://github.com/snehaldeveloper"
+              href="https://github.com/snehalchaudharii"
               className="icon-button"
               target="_blank"
               rel="noopener noreferrer"
