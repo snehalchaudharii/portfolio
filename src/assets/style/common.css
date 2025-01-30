@@ -358,3 +358,16 @@
     margin-bottom: 1.5rem;
   }
 }
+
+.image-container {
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Same as width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid #ccc; /* Optional: Add a border */
+  object-fit: cover; /* Ensures proper cropping */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}

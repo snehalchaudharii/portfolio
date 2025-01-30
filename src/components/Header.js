@@ -1,18 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Corrected import
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { useState } from "react";
 
 const Header = () => {
-  // State to control the collapse of the mobile menu
   const [isOpen, setIsOpen] = useState(false);
 
-  // Function to toggle the collapse
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Function to close the menu when a link is clicked
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -28,10 +24,14 @@ const Header = () => {
         </Navbar.Brand>
 
         {/* Toggle for mobile */}
-        <Navbar.Toggle aria-controls="navbar-nav" onClick={toggleMenu} />
+        <Navbar.Toggle
+          aria-controls="navbar-nav"
+          onClick={toggleMenu}
+          aria-expanded={isOpen}
+        />
 
-        {/* Navbar Menu for Large Screens */}
-        <Navbar.Collapse id="navbar-nav">
+        {/* Navbar Menu */}
+        <Navbar.Collapse id="navbar-nav" in={isOpen}>
           <Nav className="ms-auto d-flex align-items-center">
             <Link
               to="/home"

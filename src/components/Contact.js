@@ -2,7 +2,7 @@ import React from "react";
 import emailIcon from "../assets/img/email.png";
 import githubIcon from "../assets/img/github.png";
 import linkedinIcon from "../assets/img/linkedin.png";
-import "bootstrap-icons/font/bootstrap-icons.css"; // Import Bootstrap icons
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Contact = () => {
   const handleDownload = () => {
@@ -15,7 +15,9 @@ const Contact = () => {
   return (
     <div className="contact-section py-5">
       <div className="container d-flex flex-column align-items-center justify-content-center">
-        <h1 className="text-center third-text-color mb-4">Contact Me</h1>
+        <h1 className="text-center third-text-color mb-5 fw-bold display-4">
+          Contact Me
+        </h1>
         <p className="text-center primary-text-color mb-5">
           I'd love to hear from you! Feel free to reach out for any questions or
           collaborations.

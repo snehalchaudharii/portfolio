@@ -63,7 +63,9 @@ const Experience = () => {
   return (
     <div className="experience-section">
       <div className="container">
-        <h1 className="text-center third-text-color mb-4">Experience</h1>
+        <h1 className="text-center third-text-color mb-5 fw-bold display-4">
+          Experience
+        </h1>
         <p className="text-center primary-text-color mb-5">
           Work and Internship
         </p>
