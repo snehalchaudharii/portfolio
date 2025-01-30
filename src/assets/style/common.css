@@ -1,0 +1,359 @@
+.sclogo {
+  font-family: "Monsieur La Doulaise", cursive;
+}
+.primary-color {
+  background-color: rgba(124, 174, 195, 1);
+}
+.secondary-color: {
+  background-color: rgba(111, 111, 77, 1);
+}
+.third-color {
+  background-color: rgba(44, 48, 73, 1);
+}
+.primary-text-color {
+  color: rgba(124, 174, 195, 1);
+}
+.secondary-text-color {
+  color: rgba(111, 111, 77, 1);
+}
+.third-text-color {
+  color: rgba(44, 48, 73, 1);
+}
+.text-white {
+  color: white;
+}
+.gap-10 {
+  gap: 10px; /* Adds 10px space between children */
+}
+.socialIcon-w {
+  width: 50px;
+}
+/* General animation setup */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animation when the element is in view */
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Default for elements before animation */
+.animated-text,
+.animated-image {
+  opacity: 0;
+}
+
+/* Timeline Layout */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(124, 174, 195, 1); /* Primary color for the line */
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(44, 48, 73, 1); /* Third color for markers */
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-item.left::before {
+  right: -6px;
+}
+.timeline-item.right::before {
+  left: -6px;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: rgba(245, 245, 245, 1);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.timeline-content h5 {
+  margin-bottom: 0.5rem;
+}
+.timeline-content ul {
+  padding-left: 1.5rem;
+}
+.timeline-content a {
+  margin-top: 1rem;
+  display: inline-block;
+}
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 4px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 2rem;
+    text-align: left;
+  }
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: -6px;
+  }
+}
+/* Visit Website Button Styling */
+.visit-website-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(124, 174, 195, 1) 0%,
+    rgba(44, 48, 73, 1) 100%
+  );
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visit-website-btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 48, 73, 1) 0%,
+    rgba(124, 174, 195, 1) 100%
+  );
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.visit-website-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Section Background */
+.experience-section {
+  padding: 60px 0;
+}
+
+/* Experience List Styling */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item {
+  background-color: rgba(124, 174, 195, 0.1); /* Light primary color */
+  border: 1px solid rgba(124, 174, 195, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.experience-header h5 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.experience-header h6 {
+  font-size: 1.2rem;
+}
+
+.experience-header p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Body Styling */
+.experience-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-body ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-list {
+    gap: 20px;
+  }
+
+  .experience-item {
+    padding: 15px;
+  }
+
+  .experience-header h5 {
+    font-size: 1.3rem;
+  }
+
+  .experience-header h6 {
+    font-size: 1rem;
+  }
+
+  .experience-body ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+  padding: 60px 0;
+  /* background-color: rgba(44, 48, 73, 0.1);  */
+}
+
+/* Form Container */
+.contact-form,
+.download-resume {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Form and Resume Section */
+.contact-form:hover,
+.download-resume:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+.contact-section h1 {
+  font-size: 2rem;
+  color: rgba(44, 48, 73, 1);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: rgba(124, 174, 195, 1);
+  border-color: rgba(124, 174, 195, 1);
+}
+
+.btn-outline-primary {
+  color: rgba(124, 174, 195, 1);
+  border-color: rgba(124, 174, 195, 1);
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(124, 174, 195, 1);
+  color: white;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form,
+  .download-resume {
+    padding: 15px;
+  }
+
+  .contact-section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Custom styling for contact form and resume download section */
+
+.btn-primary {
+  background-color: rgba(124, 174, 195, 1);
+  border-color: rgba(124, 174, 195, 1);
+}
+
+.btn-outline-primary {
+  color: rgba(124, 174, 195, 1);
+  border-color: rgba(124, 174, 195, 1);
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(124, 174, 195, 0.1);
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+/* Hover effects for buttons */
+.contact-form button:hover,
+.download-resume button:hover {
+  color: #ffffff;
+  background-color: rgba(124, 174, 195, 1); /* Primary color for the line */
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-form,
+  .download-resume {
+    margin-bottom: 1.5rem;
+  }
+}
